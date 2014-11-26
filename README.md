@@ -1,4 +1,4 @@
-Masshole.io
+Masshole
 ===========
 
 Street Safety Challenge 
