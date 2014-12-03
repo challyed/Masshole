@@ -28,3 +28,22 @@ This is being graded on creativity and how informative the application is.
 The opening page should talk about accidents and how they occur. Then we move on to the meat of the project. The final page should talk about how to prevent  accidents.
 
 In addition, it would be cool if you can add Google map views (map view and Google car view)
+
+# Day 3? thoughts
+## Accidents information
+* 8090 items
+* Monday = 830
+* Tuesday = 867
+* Wednesday = 841
+* Thursday = 966
+* Friday = 1004
+* Saturday = 731
+* Sunday = 574
+* The most accidents happen on Friday with the least on Sunday
+* 2550 accidents happen in AM
+* 3790 accidents happen in PM
+* Cars vs Vans = 10
+'''
+select count(*) as AutoVVAN from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Van"
+'''
