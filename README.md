@@ -49,4 +49,28 @@ where `Object 1` = "Auto" and `Object 2` = "Van"
 * Trucks vs Vans = 1
 * select count(*) as TruckVVAN from TestCambridgeData
 where `Object 1` = "Truck" and `Object 2` = "Van"
+* Taxi vs Vans = 2
+* select count(*) as TaxiVVAN from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Van"
+* School bus vs Van = 0
+* select count(*) as SchoolbusVVAN from TestCambridgeData
+where `Object 1` = "School Bus" and `Object 2` = "Van"
+* Pedestrian vs Van = 0
+select count(*) as PedestrianVVAN from TestCambridgeData
+where `Object 1` = "Pedestrian" and `Object 2` = "Van"
+* Motorcycle v Vans = 0
+* select count(*) as MotorcycleVVAN from TestCambridgeData
+where `Object 1` = "Motorcycle" and `Object 2` = "Van"
+* Moped vs Van
+* select count(*) as MopedVVAN from TestCambridgeData
+where `Object 1` = "Moped" and `Object 2` = "Van"
+* Miscellaneous vs Van = 0
+* select count(*) as MiscellaneousVVAN from TestCambridgeData
+where `Object 1` = "Miscellaneous" and `Object 2` = "Van"
+* MBTA Bus vs Van = 0
+* select count(*) as MBTAbusSVVAN from TestCambridgeData
+where `Object 1` = "MBTA Bus" and `Object 2` = "Van"
+* Bus (Other) vs van = 0
+* select count(*) as busotherVVAN from TestCambridgeData
+where `Object 1` = "Bus (Other)" and `Object 2` = "Van"
 *
