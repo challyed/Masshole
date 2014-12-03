@@ -3,10 +3,9 @@
   <head>
     <title>Massholes in Cambridge, MA</title>
     <link rel="stylesheet" href="css/toast/grid.css">
+    <script src="Chart.js"></script>
   </head>
   <style>
-  body {
-  }
   </style>
   <body>
     <div class="Introduction">
@@ -17,7 +16,32 @@
           <h2>Causes</h2>
       </div>
       <div class='grid__col grid__col--1-of-8 grid__col--centered'>
-        <p>test</p>
+        <p>test Chart</p>
+        <canvas id="Number of Accdients a Day" width="600" height="400"></canvas>
+
+        <script>
+
+
+        var barData = {
+          labels : ["January","February","March","April","May","June"],
+          datasets : [
+          {
+            fillColor : "#48A497",
+            strokeColor : "#48A4D1",
+            data : [456,479,324,569,702,600]
+          },
+          {
+            fillColor : "rgba(73,188,170,0.4)",
+            strokeColor : "rgba(72,174,209,0.4)",
+            data : [364,504,605,400,345,320]
+          }
+
+          ]
+        }
+
+        var income = document.getElementById("Alpha").getContext("2d");
+        new Chart(Alpha).Bar(barData);
+        </script>
       </div>
       <div class='grid__col grid__col--1-of-8 grid__col--centered'>
         <p>test</p>
