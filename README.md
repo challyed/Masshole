@@ -115,7 +115,7 @@ where `Object 1` = "School Bus" and `Object 2` = "Auto"
 * Taxi V Auto = 66
 * select count(*) as TaxiVAuto from TestCambridgeData
 where `Object 1` = "Taxi" and `Object 2` = "Auto"
-* Truck V Auto = 65
+* Truck V Auto = 65. 
 *  select count(*) as TruckVAuto from TestCambridgeData
 where `Object 1` = "Truck" and `Object 2` = "Auto"
 
