@@ -30,6 +30,7 @@ The opening page should talk about accidents and how they occur. Then we move on
 In addition, it would be cool if you can add Google map views (map view and Google car view)
 
 # Day 3? thoughts
+ Find the information 1st and then plan layout.
 ## Accidents information
 * 8090 items
 
@@ -87,6 +88,25 @@ where `Object 1` = "Bicycle" and `Object 2` = "Van"
 * Auto v Auto = 2385
 * select count(*) as AutoVAuto from TestCambridgeData
 where `Object 1` = "Auto" and `Object 2` = "Auto"
-* Bicycle v Auto =6
+* Bicycle v Auto = 6
 *  select count(*) as BicycleVAuto from TestCambridgeData
 where `Object 1` = "Bicycle" and `Object 2` = "Auto"
+* Bus (Other) v Auto = 24
+*  select count(*) as BusOtherVAuto from TestCambridgeData
+where `Object 1` = "Bus (Other)" and `Object 2` = "Auto"
+* MBTA Bus V Auto = 4
+*  select count(*) as MBTABusVAuto from TestCambridgeData
+where `Object 1` = "MBTA Bus" and `Object 2` = "Auto"
+* Miscellaneous V Auto = 1
+* select count(*) as MiscellaneousVAuto from TestCambridgeData
+where `Object 1` = "Miscellaneous" and `Object 2` = "Auto"
+* Moped V Auto =
+*  select count(*) as MopedVAuto from TestCambridgeData
+where `Object 1` = "Moped" and `Object 2` = "Auto"
+* =
+
+
+
+
+# Day 4 Thoughts
+I have no idea how to approach this project like a data scientist. Im going to stop by the hardvard book store.
