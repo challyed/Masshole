@@ -100,11 +100,24 @@ where `Object 1` = "MBTA Bus" and `Object 2` = "Auto"
 * Miscellaneous V Auto = 1
 * select count(*) as MiscellaneousVAuto from TestCambridgeData
 where `Object 1` = "Miscellaneous" and `Object 2` = "Auto"
-* Moped V Auto =
+* Moped V Auto = 5
 *  select count(*) as MopedVAuto from TestCambridgeData
 where `Object 1` = "Moped" and `Object 2` = "Auto"
-* =
-
+* Motorcycle V Auto = 13
+* select count(*) as MotorcycleVAuto from TestCambridgeData
+where `Object 1` = "Motorcycle" and `Object 2` = "Auto"
+* Pedestrian V Auto = 1
+*  select count(*) as PedestrianVAuto from TestCambridgeData
+where `Object 1` = "Pedestrian" and `Object 2` = "Auto"
+* School Bus V Auto = 9
+* select count(*) as SchoolBusVAuto from TestCambridgeData
+where `Object 1` = "School Bus" and `Object 2` = "Auto"
+* Taxi V Auto = 66
+* select count(*) as TaxiVAuto from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Auto"
+* Truck V Auto = 65
+*  select count(*) as TruckVAuto from TestCambridgeData
+where `Object 1` = "Truck" and `Object 2` = "Auto"
 
 
 
