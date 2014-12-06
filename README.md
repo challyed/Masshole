@@ -32,6 +32,8 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 # Day 3? thoughts
 ## Accidents information
 * 8090 items
+
+### Days of Accidents
 * Monday = 830
 * Tuesday = 867
 * Wednesday = 841
@@ -40,9 +42,13 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * Saturday = 731
 * Sunday = 574
 * The most accidents happen on Friday with the least on Sunday
+
+### Times of Accidents
 * 2550 accidents happen in AM
 * 3790 accidents happen in PM
 * Most Accidents happen at night
+
+### Object 1 vs Vans
 * Cars vs Vans = 10
 * sql select count(*) as AutoVVAN from TestCambridgeData
 where `Object 1` = "Auto" and `Object 2` = "Van"
@@ -73,4 +79,14 @@ where `Object 1` = "MBTA Bus" and `Object 2` = "Van"
 * Bus (Other) vs van = 0
 * select count(*) as busotherVVAN from TestCambridgeData
 where `Object 1` = "Bus (Other)" and `Object 2` = "Van"
-*
+* Bicycle vs Van = 0
+* select count(*) as BicycleVVAN from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Van"
+
+### Object 1 vs Auto
+* Auto v Auto = 2385
+* select count(*) as AutoVAuto from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Auto"
+* Bicycle v Auto =6
+*  select count(*) as BicycleVAuto from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Auto"
