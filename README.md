@@ -30,8 +30,11 @@ The opening page should talk about accidents and how they occur. Then we move on
 In addition, it would be cool if you can add Google map views (map view and Google car view)
 
 # Day 3? thoughts
+ Find the information 1st and then plan layout.
 ## Accidents information
 * 8090 items
+
+### Days of Accidents
 * Monday = 830
 * Tuesday = 867
 * Wednesday = 841
@@ -40,9 +43,13 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * Saturday = 731
 * Sunday = 574
 * The most accidents happen on Friday with the least on Sunday
+
+### Times of Accidents
 * 2550 accidents happen in AM
 * 3790 accidents happen in PM
 * Most Accidents happen at night
+
+### Object 1 vs Vans
 * Cars vs Vans = 10
 * sql select count(*) as AutoVVAN from TestCambridgeData
 where `Object 1` = "Auto" and `Object 2` = "Van"
@@ -73,4 +80,87 @@ where `Object 1` = "MBTA Bus" and `Object 2` = "Van"
 * Bus (Other) vs van = 0
 * select count(*) as busotherVVAN from TestCambridgeData
 where `Object 1` = "Bus (Other)" and `Object 2` = "Van"
+* Bicycle vs Van = 0
+* select count(*) as BicycleVVAN from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Van"
+
+### Object 1 vs Auto
+* Auto v Auto = 2385
+* select count(*) as AutoVAuto from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Auto"
+* Bicycle v Auto = 6
+*  select count(*) as BicycleVAuto from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Auto"
+* Bus (Other) v Auto = 24
+*  select count(*) as BusOtherVAuto from TestCambridgeData
+where `Object 1` = "Bus (Other)" and `Object 2` = "Auto"
+* MBTA Bus V Auto = 4
+*  select count(*) as MBTABusVAuto from TestCambridgeData
+where `Object 1` = "MBTA Bus" and `Object 2` = "Auto"
+* Miscellaneous V Auto = 1
+* select count(*) as MiscellaneousVAuto from TestCambridgeData
+where `Object 1` = "Miscellaneous" and `Object 2` = "Auto"
+* Moped V Auto = 5
+*  select count(*) as MopedVAuto from TestCambridgeData
+where `Object 1` = "Moped" and `Object 2` = "Auto"
+* Motorcycle V Auto = 13
+* select count(*) as MotorcycleVAuto from TestCambridgeData
+where `Object 1` = "Motorcycle" and `Object 2` = "Auto"
+* Pedestrian V Auto = 1
+*  select count(*) as PedestrianVAuto from TestCambridgeData
+where `Object 1` = "Pedestrian" and `Object 2` = "Auto"
+* School Bus V Auto = 9
+* select count(*) as SchoolBusVAuto from TestCambridgeData
+where `Object 1` = "School Bus" and `Object 2` = "Auto"
+* Taxi V Auto = 66
+* select count(*) as TaxiVAuto from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Auto"
+* Truck V Auto = 65
+*  select count(*) as TruckVAuto from TestCambridgeData
+where `Object 1` = "Truck" and `Object 2` = "Auto"
+* Van V Auto = 4
+* select count(*) as VanVAuto from TestCambridgeData
+where `Object 1` = "Van" and `Object 2` = "Auto"
+
+### Object 1 V Truck
+* Auto V Truck =92
+*  select count(*) as AutoVTruck from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Truck"
+* Taxi v Truck = 4
+* select count(*) as TaxiVTruck from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Truck"
+* Truck v Truck = 5
+* select count(*) as TruckVTruck from TestCambridgeData
+where `Object 1` = "Truck" and `Object 2` = "Truck"
+* Van V Truck = 1
+*  select count(*) as VanVTruck from TestCambridgeData
+where `Object 1` = "Van" and `Object 2` = "Truck"
+
+### Object 1 V Moped
+* Auto V Moped = 20
+*  select count(*) as AutoVMoped from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Moped"
+* Taxi V Moped = 2
+*  select count(*) as TaxiVMoped from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Moped"
+
+### Object 1 V Parked Vehicle
+* Auto V Parked Vehicle = 1778
+*  select count(*) as AutoVParkedVehicle from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Parked Vehicle"
+* Bicycle V Parked Vehicle = 9
+*  select count(*) as BicycleVParkedVehicle from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Parked Vehicle"
+*  Bus other V Parked Vehicle = 23
+*  select count(*) as BusOtherVParkedVehicle from TestCambridgeData
+where `Object 1` = "Bus (Other)" and `Object 2` = "Parked Vehicle"
+* MBTA Bus V Parked Vehicle = 2
+*  select count(*) as MBTABusVParkedVehicle from TestCambridgeData
+where `Object 1` = "MBTA Bus" and `Object 2` = "Parked Vehicle"
 *
+*
+
+
+
+# Day 4 Thoughts
+I have no idea how to approach this project like a data scientist. Im going to stop by the hardvard book store.
