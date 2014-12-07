@@ -115,9 +115,44 @@ where `Object 1` = "School Bus" and `Object 2` = "Auto"
 * Taxi V Auto = 66
 * select count(*) as TaxiVAuto from TestCambridgeData
 where `Object 1` = "Taxi" and `Object 2` = "Auto"
-* Truck V Auto = 65. 
+* Truck V Auto = 65
 *  select count(*) as TruckVAuto from TestCambridgeData
 where `Object 1` = "Truck" and `Object 2` = "Auto"
+* Van V Auto = 4
+* select count(*) as VanVAuto from TestCambridgeData
+where `Object 1` = "Van" and `Object 2` = "Auto"
+
+### Object 1 V Truck
+* Auto V Truck =92
+*  select count(*) as AutoVTruck from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Truck"
+* Taxi v Truck = 4
+* select count(*) as TaxiVTruck from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Truck"
+* Truck v Truck = 5
+* select count(*) as TruckVTruck from TestCambridgeData
+where `Object 1` = "Truck" and `Object 2` = "Truck"
+* Van V Truck = 1
+*  select count(*) as VanVTruck from TestCambridgeData
+where `Object 1` = "Van" and `Object 2` = "Truck"
+
+### Object 1 V Moped
+* Auto V Moped = 20
+*  select count(*) as AutoVMoped from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Moped"
+* Taxi V Moped = 2
+*  select count(*) as TaxiVMoped from TestCambridgeData
+where `Object 1` = "Taxi" and `Object 2` = "Moped"
+
+### Object 1 V Parked Vehicle
+* Auto V Parked Vehicle = 1778
+*  select count(*) as AutoVParkedVehicle from TestCambridgeData
+where `Object 1` = "Auto" and `Object 2` = "Parked Vehicle"
+* Bicycle V Parked Vehicle = 9
+*  select count(*) as BicycleVParkedVehicle from TestCambridgeData
+where `Object 1` = "Bicycle" and `Object 2` = "Parked Vehicle"
+*
+*
 
 
 
