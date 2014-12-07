@@ -151,6 +151,12 @@ where `Object 1` = "Auto" and `Object 2` = "Parked Vehicle"
 * Bicycle V Parked Vehicle = 9
 *  select count(*) as BicycleVParkedVehicle from TestCambridgeData
 where `Object 1` = "Bicycle" and `Object 2` = "Parked Vehicle"
+*  Bus other V Parked Vehicle = 23
+*  select count(*) as BusOtherVParkedVehicle from TestCambridgeData
+where `Object 1` = "Bus (Other)" and `Object 2` = "Parked Vehicle"
+* MBTA Bus V Parked Vehicle = 2
+*  select count(*) as MBTABusVParkedVehicle from TestCambridgeData
+where `Object 1` = "MBTA Bus" and `Object 2` = "Parked Vehicle"
 *
 *
 
