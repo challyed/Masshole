@@ -111,6 +111,8 @@
     }
   </style>
     <title> The Drivers in Cambridge, MA</title>
+    <script src="Chart.js"></script>
+
   </head>
   <body>
   <h1> Massholes </h1>
@@ -122,6 +124,22 @@
 
 <h3>Introduction</h3>
 <p> Write Now!</p>
-
+<canvas id="buyers" width="600" height="400"></canvas>
+  <script>
+var buyers = document.getElementById('buyers').getContext('2d');
+new Chart(buyers).Line(buyerData);
+var buyerData = {
+  labels : ["January","February","March","April","May","June"],
+  datasets : [
+  {
+    fillColor : "rgba(172,194,132,0.4)",
+    strokeColor : "#ACC26D",
+    pointColor : "#fff",
+    pointStrokeColor : "#9DB86D",
+    data : [203,156,99,251,305,247]
+  }
+  ]
+}
+  </script>
   </body>
 </html>
