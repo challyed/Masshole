@@ -137,9 +137,16 @@
 
 <h3>Analysis of Data</h3>
 <h4>Number of Accdients per Day</h4>
-
-<div id="ChartA" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
-
+<h4>Number of Accidents by Time of Day</h4>
+<h4>Number of Accidents per year</h4>
+<h4>Number of Accidents caused by  </h4>
+<h4>Number of Accidents caused by  </h4>
+<h4>Number of Accidents caused by  </h4>
+<h4>Number of Accidents caused by  </h4>
+<h4>Number of Accidents caused by </h4>
+<h4>Number of Accidents caused by  </h4>
+<h4>Show a table where accidents when there was percipation and what was it </h4>
+<h4>Streets on where accidents occur </h4>
 <h3>Applications</h3>
 
 <h4>Ariadne</h4>
@@ -151,60 +158,6 @@
 <p>A reporting app that lets users report accidents online.</p>
 
 <h3>End</h3>
-<!-- Chart A -->
-<script>
-$(function () {
-  $('#ChartA').highcharts({
-    chart: {
-      type: 'bar'
-    },
-    title: {
-      text: 'Days of collisions'
-    },
 
-    xAxis: {
-      categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      title: {
-        text: null
-      }
-    },
-    yAxis: {
-      min: 0,
-      title: {
-        text: 'Number of Traffic Collisions',
-        align: 'justify'
-      },
-      labels: {
-        overflow: 'absolute'
-      }
-    },
-    plotOptions: {
-      bar: {
-        dataLabels: {
-          enabled: false
-        }
-      }
-    },
-    legend: {
-      layout: 'vertical',
-      align: 'right',
-      verticalAlign: 'top',
-      x: -40,
-      y: 100,
-      floating: false,
-      borderWidth: 1,
-      backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-      shadow: true
-    },
-    credits: {
-      enabled: true
-    },
-    series: [{
-      name: 'collisions',
-      data: [830, 867, 841, 966, 1004, 731, 574]
-    }]
-  });
-});
-</script>
 </body>
 </html>
