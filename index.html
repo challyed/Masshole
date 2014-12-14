@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -124,8 +124,7 @@
 
     <title> Collisions in Cambridge, MA</title>
     <script src="jquery-2.0.2.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="../Chart.js"></script>
 
   </head>
   <body>
@@ -144,6 +143,35 @@
 
 <h3>Analysis of Data</h3>
 <h4>Number of Accdients per Day</h4>
+<div style="width: 50%">
+  <canvas id="canvas" height="450" width="600"></canvas>
+</div>
+
+
+<script>
+var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+var barChartData = {
+  labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+  datasets : [
+{
+  fillColor : "rgba(220,220,220,0.5)",
+  strokeColor : "rgba(220,220,220,0.8)",
+  highlightFill: "rgba(220,220,220,0.75)",
+  highlightStroke: "rgba(220,220,220,1)",
+  data : [830, 867, 841, 966, 1004, 731, 574]
+},
+]
+
+}
+window.onload = function(){
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx).Bar(barChartData, {
+    responsive : true
+  });
+}
+
+</script>
 <h4>Number of Accidents by Time of Day</h4>
 <h4>Number of Accidents per year</h4>
 <h4>Number of Accidents caused by Cars  </h4>
