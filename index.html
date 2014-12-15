@@ -104,11 +104,6 @@
       solid #FF8080; /* #BA4343; */
     }
 
-    .barChartData {
-      margin-left: 0%;
-      margin-right: 0%;
-    }
-
     .smallr {
       font-size: 95%;
     }
@@ -178,6 +173,30 @@ window.onload = function(){
 
 </script>
 <h4>Number of Accidents by Time of Day</h4>
+<script>
+var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+var barChartData = {
+  labels : ["AM","PM"],
+  datasets : [
+{
+  fillColor : "rgba(220,220,220,0.5)",
+  strokeColor : "rgba(220,220,220,0.8)",
+  highlightFill: "rgba(220,220,220,0.75)",
+  highlightStroke: "rgba(220,220,220,1)",
+  data : [830, 867]
+},
+]
+
+}
+window.onload = function(){
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx).Bar(barChartData, {
+    responsive : true
+  });
+}
+
+</script>
 <h4>Number of Accidents per year</h4>
 <h4>Number of Accidents caused by Cars  </h4>
 <h4>Number of Accidents caused by Trucks  </h4>
