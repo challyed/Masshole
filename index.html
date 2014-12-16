@@ -9,16 +9,19 @@
     function drawChart() {
 
       var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses'],
-        ['2004',  1000,      400],
-        ['2005',  1170,      460],
-        ['2006',  660,       1120],
-        ['2007',  1030,      540]
+        ['Year', 'Accidents'],
+        ['Monday',  830],
+        ['Tuesday',  867],
+        ['Wednesday',  841],
+        ['Thursday',  966],
+        ['Friday',  1004],
+        ['Saturday',  731],
+        ['Sunday',  574]
         ]);
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+          title: 'Number of Accdients per Day',
+          hAxis: {title: 'Day', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
