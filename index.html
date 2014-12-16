@@ -26,7 +26,7 @@
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
 
-        chart.draw(data, options);
+
 
         var dataA = google.visualization.arrayToDataTable([
           ['Time', 'Accidents'],
@@ -41,7 +41,9 @@
 
           var chartA = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
 
+          chart.draw(data, options);
           chartA.draw(dataA, optionsA);
+
 
         }
       </script>
