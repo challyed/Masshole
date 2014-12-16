@@ -24,7 +24,7 @@
           hAxis: {title: 'Day', titleTextStyle: {color: 'blue'}}
         };
 
-        var chart = new google.visualization.ColumnChart(document.getElementById('chartA_div'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
 
         chart.draw(data, options);
 
@@ -42,7 +42,7 @@
             hAxis: {title: 'Time', titleTextStyle: {color: 'blue'}}
           };
 
-          var chart = new google.visualization.ColumnChart(document.getElementById('chartB_div'));
+          var chart = new google.visualization.ColumnChart(document.getElementById('chartB_div2'));
 
           chart.draw(data, options);
 
@@ -187,10 +187,10 @@
 
 <h3>Analysis of Data</h3>
 <h4>Number of Accdients per Day</h4>
-<div id="chartA_div" style="width: 700px; margin:0 auto;"></div>
+<div id="chart_div1" style="width: 700px; margin:0 auto;"></div>
 <p></p>
 <h4>Number of Accidents per year</h4>
-<div id="chartB_div" style="width: 700px; margin:0 auto;"></div>
+<div id="chart_div2" style="width: 700px; margin:0 auto;"></div>
 <h4>Number of Accidents caused by Cars  </h4>
 <h4>Number of Accidents caused by Trucks  </h4>
 <h4>Number of Accidents caused by MBTA  </h4>
