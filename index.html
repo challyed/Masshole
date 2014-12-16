@@ -21,7 +21,7 @@
 
         var options = {
           title: 'Number of Accdients per Day',
-          hAxis: {title: 'Day', titleTextStyle: {color: 'red'}}
+          hAxis: {title: 'Day', titleTextStyle: {color: 'blue'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
@@ -29,6 +29,24 @@
         chart.draw(data, options);
 
       }
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Accidents'],
+          ['AM',  2550],
+          ['PM',  3790]
+          ]);
+
+          var options = {
+            title: 'Time of Accidents',
+            hAxis: {title: 'Time', titleTextStyle: {color: 'blue'}}
+          };
+
+          var chart = new google.visualization.ColumnChart(document.getElementById('chartB_div'));
+
+          chart.draw(data, options);
+
+        }
       </script>
     <meta charset="utf-8" />
     <style type = "text/css">
@@ -169,8 +187,9 @@
 
 <h3>Analysis of Data</h3>
 <h4>Number of Accdients per Day</h4>
-<div id="chart_div" style="width: 900px; margin:0 auto;"></div>
+<div id="chart_div" style="width: 600px; margin:0 auto;"></div>
 <h4>Number of Accidents per year</h4>
+<div id="chartB_div" style="width: 600px; margin:0 auto;"></div>
 <h4>Number of Accidents caused by Cars  </h4>
 <h4>Number of Accidents caused by Trucks  </h4>
 <h4>Number of Accidents caused by MBTA  </h4>
