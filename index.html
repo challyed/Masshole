@@ -109,6 +109,35 @@ var dataD = google.visualization.arrayToDataTable([
   };
 
   var chartD = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
+
+/* Truck vs Object 2*/
+
+var dataE = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  1],
+  ['Auto',  65],
+  ['Bicycle',  13],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  41],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  1],
+  ['Parked Vehicle',  61],
+  ['Pedestrian',  7],
+  ['School Bus',  0],
+  ['Taxi',  3],
+  ['Truck',  5],
+  ['Van',  1]
+  ]);
+
+  var optionsE = {
+    title: 'Number of Accidents caused by Trucks',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartE = new google.visualization.ColumnChart(document.getElementById('chart_div6'));
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -116,7 +145,7 @@ var dataD = google.visualization.arrayToDataTable([
           chartB.draw(dataB, optionsB); // yearly
           chartC.draw(dataC, optionsC); // caused by autos
           chartD.draw(dataD, optionsD); // caused by vans
-          chartE.draw(dataE, optionsE);
+          chartE.draw(dataE, optionsE); // caused by trucks
           chartF.draw(dataF, optionsF);
           chartG.draw(dataG, optionsG);
           chartH.draw(dataH, optionsH);

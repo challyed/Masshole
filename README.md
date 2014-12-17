@@ -71,7 +71,39 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * ['Truck',  92],
 * ['Van',  10]
 
+### Van vs Object 2
+* ['null',  0],
+* ['Auto',  4],
+* ['Bicycle',  669],
+* ['Bus (Other)',  8],
+* ['Fixed Object',  297],
+* ['MBTA Bus',  2],
+* ['Miscellaneous',  32],
+* ['Moped',  20],
+* ['Motorcycle',  13],
+* ['Parked Vehicle',  1778],
+* ['Pedestrian',  389],
+* ['School Bus',  8],
+* ['Taxi',  72],
+* ['Truck',  92],
+* ['Van',  10]
 
+### Truck vs Object 2
+* ['null',  1],
+* ['Auto',  65],
+* ['Bicycle',  13],
+* ['Bus (Other)',  0],
+* ['Fixed Object',  41],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  0],
+* ['Moped',  0],
+* ['Motorcycle',  1],
+* ['Parked Vehicle',  61],
+* ['Pedestrian',  7],
+* ['School Bus',  0],
+* ['Taxi',  3],
+* ['Truck',  5],
+* ['Van',  1]
 
 
 # Day 4 Thoughts
