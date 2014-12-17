@@ -41,8 +41,25 @@
 
           var chartA = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
 
+          var dataB = google.visualization.arrayToDataTable([
+            ['Year', 'Accidents'],
+            ['2010',  1593],
+            ['2011',  1708],
+            ['2012',  1522],
+            ['2013',  1517]
+            ]);
+
+            var optionsB = {
+              title: 'Time of Accidents',
+              hAxis: {title: 'Time', titleTextStyle: {color: 'blue'}}
+            };
+
+            var chartB = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+
+
           chart.draw(data, options);
           chartA.draw(dataA, optionsA);
+          chartB.draw(dataB, optionsB);
 
 
         }
