@@ -50,16 +50,44 @@
             ]);
 
             var optionsB = {
-              title: 'Time of Accidents',
-              hAxis: {title: 'Time', titleTextStyle: {color: 'blue'}}
+              title: 'Year of Accidents',
+              hAxis: {title: 'Year', titleTextStyle: {color: 'blue'}}
             };
 
             var chartB = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
 
 
+            var dataC = google.visualization.arrayToDataTable([
+              ['Object 2', 'Accidents'],
+              ['null',  3],
+              ['Auto',  2385],
+              ['Bicycle',  669],
+              ['Bus (Other)',  8],
+              ['Fixed Object',  297],
+              ['MBTA Bus',  2],
+              ['Miscellaneous',  32],
+              ['Moped',  20],
+              ['Motorcycle',  13],
+              ['Parked Vehicle',  1778],
+              ['Pedestrian',  389],
+              ['School Bus',  8],
+              ['Taxi',  72],
+              ['Truck',  92],
+              ['Van',  10]
+              ]);
+
+              var optionsC = {
+                title: 'Number of Accidents caused by Cars',
+                hAxis: {title: 'Object 2', titleTextStyle: {color: 'blue'}}
+              };
+
+              var chartC = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+
+
           chart.draw(data, options);
           chartA.draw(dataA, optionsA);
           chartB.draw(dataB, optionsB);
+          chartC.draw(dataC, optionsC);
 
 
         }
