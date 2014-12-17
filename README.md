@@ -156,6 +156,23 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * ['Truck',  0],
 * ['Van',  0]
 
+###  Motorcycle Vs Object 2
+* ['null',  0],
+* ['Auto',  13],
+* ['Bicycle',  1],
+* ['Bus (Other)',  0],
+* ['Fixed Object',  4],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  4],
+* ['Moped',  0],
+* ['Motorcycle',  0],
+* ['Parked Vehicle',  6],
+* ['Pedestrian',  2],
+* ['School Bus',  0],
+* ['Taxi',  0],
+* ['Truck',  0],
+* ['Van',  0]
+
 # Day 4 Thoughts
 I have no idea how to approach this project like a data scientist. Im going to stop by the hardvard book store.
 

@@ -219,6 +219,33 @@ var dataH = google.visualization.arrayToDataTable([
 
   var chartH = new google.visualization.ColumnChart(document.getElementById('chart_div9'));
 
+/*Motorcycle Vs Object 2*/
+var dataI = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  13],
+  ['Bicycle',  1],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  4],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  4],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  6],
+  ['Pedestrian',  2],
+  ['School Bus',  0],
+  ['Taxi',  0],
+  ['Truck',  0],
+  ['Van',  0]
+  ]);
+
+  var optionsI = {
+    title: 'Number of Accidents caused by Motorcycles',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartI = new google.visualization.ColumnChart(document.getElementById('chart_div10'));
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -230,7 +257,7 @@ var dataH = google.visualization.arrayToDataTable([
           chartF.draw(dataF, optionsF); // caused by taxi
           chartG.draw(dataG, optionsG); // caused by School Bus
           chartH.draw(dataH, optionsH); // caused by Pedestrian
-          chartI.draw(dataI, optionsI);
+          chartI.draw(dataI, optionsI); // caused by motorcycle
           chartJ.draw(dataJ, optionsJ);
           chartK.draw(dataK, optionsK);
           chartL.draw(dataL, optionsL);
