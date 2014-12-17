@@ -224,7 +224,24 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * ['Truck',  0],
 * ['Van',  0]
 
-### Vs object 2
+### Bus (other) Vs object 2
+* ['null',  0],
+* ['Auto',  24],
+* ['Bicycle',  7],
+* ['Bus (Other)',  1],
+* ['Fixed Object',  7],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  0],
+* ['Moped',  0],
+* ['Motorcycle',  0],
+* ['Parked Vehicle',  23],
+* ['Pedestrian',  4],
+* ['School Bus',  0],
+* ['Taxi',  1],
+* ['Truck',  0],
+* ['Van',  0]
+
+### Bike Vs Object 2
 
 # Day 4 Thoughts
 I have no idea how to approach this project like a data scientist. Im going to stop by the hardvard book store.

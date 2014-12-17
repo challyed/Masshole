@@ -327,7 +327,32 @@ var dataL = google.visualization.arrayToDataTable([
 
   var chartL = new google.visualization.ColumnChart(document.getElementById('chart_div13'));
 
-/**/
+/* Bus Other Vs Object 2*/
+var dataM = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  24],
+  ['Bicycle',  7],
+  ['Bus (Other)',  1],
+  ['Fixed Object',  7],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  23],
+  ['Pedestrian',  4],
+  ['School Bus',  0],
+  ['Taxi',  1],
+  ['Truck',  0],
+  ['Van',  0]
+  ]);
+
+  var optionsM = {
+    title: 'Number of Accidents caused by a Bus (Blot/Peterpan)',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartM = new google.visualization.ColumnChart(document.getElementById('chart_div14'));
 
 /*Functions that call data for chart*/
 
@@ -344,7 +369,7 @@ var dataL = google.visualization.arrayToDataTable([
           chartJ.draw(dataJ, optionsJ); // caused by moped
           chartK.draw(dataK, optionsK); // caused by Miscellaneous
           chartL.draw(dataL, optionsL); // caused by Mbta
-          chartM.draw(dataM, optionsM); // caused by
+          chartM.draw(dataM, optionsM); // caused by Bus (other)
           chartN.draw(dataN, optionsN); // caused by
 
 
