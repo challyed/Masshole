@@ -138,7 +138,7 @@ var dataE = google.visualization.arrayToDataTable([
 
   var chartE = new google.visualization.ColumnChart(document.getElementById('chart_div6'));
 
-/* Truck vs Object 2*/
+/* Taxi vs Object 2*/
 var dataF = google.visualization.arrayToDataTable([
   ['Object 2', 'Accidents'],
   ['null',  0],
@@ -165,6 +165,36 @@ var dataF = google.visualization.arrayToDataTable([
 
   var chartF = new google.visualization.ColumnChart(document.getElementById('chart_div7'));
 
+/* School Bus vs Object 2*/
+var dataG = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  9],
+  ['Bicycle',  0],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  0],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  8],
+  ['Pedestrian',  3],
+  ['School Bus',  0],
+  ['Taxi',  0],
+  ['Truck',  0],
+  ['Van',  0]
+  ]);
+
+  var optionsG = {
+    title: 'Number of Accidents caused by Taxis',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartG = new google.visualization.ColumnChart(document.getElementById('chart_div8'));
+
+/**/
+
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -174,7 +204,7 @@ var dataF = google.visualization.arrayToDataTable([
           chartD.draw(dataD, optionsD); // caused by vans
           chartE.draw(dataE, optionsE); // caused by trucks
           chartF.draw(dataF, optionsF); // caused by taxi
-          chartG.draw(dataG, optionsG);
+          chartG.draw(dataG, optionsG); // caused by School Bus
           chartH.draw(dataH, optionsH);
           chartI.draw(dataI, optionsI);
           chartJ.draw(dataJ, optionsJ);
