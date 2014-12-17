@@ -56,7 +56,7 @@
 
             var chartB = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
 
-
+/*Car Vs Object 2 */
             var dataC = google.visualization.arrayToDataTable([
               ['Object 2', 'Accidents'],
               ['null',  3],
@@ -83,22 +83,49 @@
 
               var chartC = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
 
+/*Van vs Object 2*/
+var dataD = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  4],
+  ['Bicycle',  3],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  1],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  3],
+  ['Pedestrian',  1],
+  ['School Bus',  0],
+  ['Taxi',  0],
+  ['Truck',  1],
+  ['Van',  0]
+  ]);
 
-          chart.draw(data, options);
-          chartA.draw(dataA, optionsA);
-          chartB.draw(dataB, optionsB);
-          chartC.draw(dataC, optionsC);
-          chartC.draw(dataD, optionsD);
-          chartC.draw(dataE, optionsE);
-          chartC.draw(dataF, optionsF);
-          chartC.draw(dataG, optionsG);
-          chartC.draw(dataH, optionsH);
-          chartC.draw(dataI, optionsI);
-          chartC.draw(dataJ, optionsJ);
-          chartC.draw(dataK, optionsK);
-          chartC.draw(dataL, optionsL);
-          chartC.draw(dataM, optionsM);
-          chartC.draw(dataN, optionsN);
+  var optionsD = {
+    title: 'Number of Accidents caused by Vans',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartD = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
+/*Functions that call data for chart*/
+
+          chart.draw(data, options); // Days
+          chartA.draw(dataA, optionsA); // AM Vs PM
+          chartB.draw(dataB, optionsB); // yearly
+          chartC.draw(dataC, optionsC); // caused by autos
+          chartD.draw(dataD, optionsD); // caused by vans
+          chartE.draw(dataE, optionsE);
+          chartF.draw(dataF, optionsF);
+          chartG.draw(dataG, optionsG);
+          chartH.draw(dataH, optionsH);
+          chartI.draw(dataI, optionsI);
+          chartJ.draw(dataJ, optionsJ);
+          chartK.draw(dataK, optionsK);
+          chartL.draw(dataL, optionsL);
+          chartM.draw(dataM, optionsM);
+          chartN.draw(dataN, optionsN);
 
 
         }
