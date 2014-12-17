@@ -173,6 +173,59 @@ In addition, it would be cool if you can add Google map views (map view and Goog
 * ['Truck',  0],
 * ['Van',  0]
 
+### Moped vs Object 2
+* ['null',  1],
+* ['Auto',  5],
+* ['Bicycle',  1],
+* ['Bus (Other)',  0],
+* ['Fixed Object',  1],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  1],
+* ['Moped',  0],
+* ['Motorcycle',  0],
+* ['Parked Vehicle',  2],
+* ['Pedestrian',  0],
+* ['School Bus',  0],
+* ['Taxi',  0],
+* ['Truck',  0],
+* ['Van',  0]
+
+### Miscellaneous Vs Object 2
+* ['null',  0],
+* ['Auto',  1],
+* ['Bicycle',  0],
+* ['Bus (Other)',  0],
+* ['Fixed Object',  1],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  0],
+* ['Moped',  0],
+* ['Motorcycle',  0],
+* ['Parked Vehicle',  0],
+* ['Pedestrian',  0],
+* ['School Bus',  0],
+* ['Taxi',  0],
+* ['Truck',  0],
+* ['Van',  0]
+
+### MBTA Bus Vs Object 2
+* ['null',  0],
+* ['Auto',  4],
+* ['Bicycle',  1],
+* ['Bus (Other)',  0],
+* ['Fixed Object',  2],
+* ['MBTA Bus',  0],
+* ['Miscellaneous',  0],
+* ['Moped',  0],
+* ['Motorcycle',  0],
+* ['Parked Vehicle',  3],
+* ['Pedestrian',  3],
+* ['School Bus',  0],
+* ['Taxi',  0],
+* ['Truck',  0],
+* ['Van',  0]
+
+### Vs object 2
+
 # Day 4 Thoughts
 I have no idea how to approach this project like a data scientist. Im going to stop by the hardvard book store.
 
