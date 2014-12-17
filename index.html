@@ -272,7 +272,63 @@ var dataJ = google.visualization.arrayToDataTable([
   };
 
   var chartJ = new google.visualization.ColumnChart(document.getElementById('chart_div11'));
-/* Vs Object 2*/
+
+/* Miscellaneous Vs Object 2*/
+var dataK = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  1],
+  ['Bicycle',  0],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  1],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  0],
+  ['Pedestrian',  0],
+  ['School Bus',  0],
+  ['Taxi',  0],
+  ['Truck',  0],
+  ['Van',  0]
+  ]);
+
+  var optionsK = {
+    title: 'Number of Accidents caused by Miscellaneous',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartK = new google.visualization.ColumnChart(document.getElementById('chart_div12'));
+
+/*MBTA bus VS Object 2*/
+var dataL = google.visualization.arrayToDataTable([
+  ['Object 2', 'Accidents'],
+  ['null',  0],
+  ['Auto',  4],
+  ['Bicycle',  1],
+  ['Bus (Other)',  0],
+  ['Fixed Object',  2],
+  ['MBTA Bus',  0],
+  ['Miscellaneous',  0],
+  ['Moped',  0],
+  ['Motorcycle',  0],
+  ['Parked Vehicle',  3],
+  ['Pedestrian',  3],
+  ['School Bus',  0],
+  ['Taxi',  0],
+  ['Truck',  0],
+  ['Van',  0]
+  ]);
+
+  var optionsL = {
+    title: 'Number of Accidents caused by MBTA Bus',
+    hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+  };
+
+  var chartL = new google.visualization.ColumnChart(document.getElementById('chart_div13'));
+
+/**/
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -286,10 +342,10 @@ var dataJ = google.visualization.arrayToDataTable([
           chartH.draw(dataH, optionsH); // caused by Pedestrian
           chartI.draw(dataI, optionsI); // caused by motorcycle
           chartJ.draw(dataJ, optionsJ); // caused by moped
-          chartK.draw(dataK, optionsK);
-          chartL.draw(dataL, optionsL);
-          chartM.draw(dataM, optionsM);
-          chartN.draw(dataN, optionsN);
+          chartK.draw(dataK, optionsK); // caused by Miscellaneous
+          chartL.draw(dataL, optionsL); // caused by Mbta
+          chartM.draw(dataM, optionsM); // caused by
+          chartN.draw(dataN, optionsN); // caused by
 
 
         }
