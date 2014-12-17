@@ -354,6 +354,33 @@ var dataM = google.visualization.arrayToDataTable([
 
   var chartM = new google.visualization.ColumnChart(document.getElementById('chart_div14'));
 
+  /* Bike Vs Object 2*/
+  var dataN = google.visualization.arrayToDataTable([
+    ['Object 2', 'Accidents'],
+    ['null',  3],
+    ['Auto',  6],
+    ['Bicycle',  1],
+    ['Bus (Other)',  0],
+    ['Fixed Object',  0],
+    ['MBTA Bus',  0],
+    ['Miscellaneous',  2,]
+    ['Moped',  0],
+    ['Motorcycle',  0],
+    ['Parked Vehicle',  9],
+    ['Pedestrian',  4],
+    ['School Bus',  0],
+    ['Taxi',  2],
+    ['Truck',  0],
+    ['Van',  0]
+    ]);
+
+    var optionsN = {
+      title: 'Number of Accidents caused by a Bike',
+      hAxis: {title: 'Object 2 (What got hit)', titleTextStyle: {color: 'blue'}}
+    };
+
+    var chartN = new google.visualization.ColumnChart(document.getElementById('chart_div15'));
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
