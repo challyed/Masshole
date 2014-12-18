@@ -2,8 +2,22 @@
 <html>
   <head>
     <title> Collisions in Cambridge, MA</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+
+  // Google Maps
+    function initialize() {
+      var mapOptions = {
+        center: { lat: -34.397, lng: 150.644},
+        zoom: 8
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+// Google Charts
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawChart);
     function drawChart() {
@@ -602,7 +616,12 @@ var dataM = google.visualization.arrayToDataTable([
 <p></p>
 
 <h4>Weather </h4>
+<p></p>
+
 <h4>Streets on where accidents occur </h4>
+<div id="map-canvas"></div>
+<p></p>
+
 <h3>Applications</h3>
 
 <h4>Ariadne</h4>
