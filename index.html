@@ -8,19 +8,6 @@
     </script>
     <script type="text/javascript">
 
-
-
-  // Google Maps
-    function initialize() {
-      var mapOptions = {
-        center: { lat: -34.397, lng: 150.644},
-        zoom: 8
-      };
-      var map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-
 // Google Charts
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawChart);
@@ -556,10 +543,13 @@ var dataM = google.visualization.arrayToDataTable([
   Accroding to a report from the US Department of Transportation, there were about 32,719 people involved in a fatal car accident in 2013 which was 1,063 less than the 2012 report. </p>
 
 <h3>What can cause a taffic accident</h3>
+<p> According to SmartMotorist.com, these are the following causes of traffic accidents.</p>
+<h4> 1. Machine Error</h4>
+<h4> 2. Road Design</h4>
+<h4> 3. Road Maintenance</h4>
+<h4> 4. Driver Behavior</h4>
 
-<h4>Human Error</h4>
-
-<h4> Weather</h4>
+<h4></h4>
 
 <h3>About the Data</h3>
 
@@ -653,4 +643,3 @@ var dataM = google.visualization.arrayToDataTable([
 
 </body>
 </html>
-
