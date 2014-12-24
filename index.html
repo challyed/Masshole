@@ -8,6 +8,19 @@
     </script>
     <script type="text/javascript">
 
+
+
+  // Google Maps
+    function initialize() {
+      var mapOptions = {
+        center: { lat: -34.397, lng: 150.644},
+        zoom: 8
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
 // Google Charts
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawChart);
@@ -527,49 +540,6 @@ var dataM = google.visualization.arrayToDataTable([
       text-align: center;
     }
 
-    #xbutton {
-      width: 200px;
-      height: 40px;
-      background-color: #BE3B43;
-      moz-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      border: 0px solid #4ABDA9;
-      padding: 15px;
-      text-align: center;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 20px;
-    }
-
-    .butto {
-      font-family: "Helvetica Neue",Helvetica,sans-serif;
-      color: #FFFFFF;
-      font-size: 170%;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-weight: 300;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .butto2 {
-      font-family: "Helvetica Neue",Helvetica,sans-serif;
-      color: #FFFFFF;
-      font-size: 110%;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-weight: 100;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    hr {
-      height: 1px;
-      border: 0;
-      border-top: 3px
-      solid #FF8080; /* #BA4343; */
-    }
 
   </style>
 
@@ -586,27 +556,19 @@ var dataM = google.visualization.arrayToDataTable([
   Accroding to a report from the US Department of Transportation, there were about 32,719 people involved in a fatal car accident in 2013 which was 1,063 less than the 2012 report. </p>
 
 <h3>What can cause a taffic accident</h3>
-<p> According to SmartMotorist.com, these are the following causes of traffic accidents.</p>
-<h4> 1. Machine Error - Bad brakes and tires</h4>
-<h4> 2. Road Design - Weather, Hazard Visibility, Traffic signs</h4>
-<h4> 3. Road Maintenance - Debris on road</h4>
-<h4> 4. Driver Behavior - Driving drunk, speeding, sleeping at the wheel</h4>
 
-<h4></h4>
+<h4>Human Error</h4>
+
+<h4> Weather</h4>
 
 <h3>About the Data</h3>
 
 <p>The following data was given by the city of Cambridge and WeatherUnderground.  Download links for the data will be available below. </p>
-/*Download Data*/
-<a class='butto' href="index.html">Download Data</a>
-<br>
+
 <h3>Analysis of Data</h3>
 
 <h4>Number of Accdients per Day</h4>
 <div id="chart_div1" style="width: 900px; margin:0 auto;"></div>
-<p></p>
-
-<h4>Number of Accident per Time of Day (12 hour)</h4>
 <p></p>
 
 <h4>Number of Accidents per time of day</h4>
@@ -679,14 +641,12 @@ var dataM = google.visualization.arrayToDataTable([
 
 <h3> What to do when you are in a traffic accident</h3>
 
-/*Download App*/
-
 <h3>Links</h3>
 <ul>
   <li>http://opendatadiscourse.com/contests/</li>
   <li>http://www.wunderground.com/</li>
   <li>https://data.cambridgema.gov/Public-Safety/ACCIDENT-2010-2013/ybny-g9cv?</li>
-  <li>http://www.smartmotorist.com/traffic-and-safety-guideline/what-causes-car-accidents.html</li>
+  <li>I liked how he designed this page: https://silverskylabs.github.io/yakhak/</li>
 </ul>
 
 <h3>End</h3>
