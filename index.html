@@ -386,6 +386,44 @@ var dataM = google.visualization.arrayToDataTable([
 
     var chartN = new google.visualization.ColumnChart(document.getElementById('chart_div15'));
 
+
+    /*Number of Accident per Time of Day (12 hour)*/
+    var dataO = google.visualization.arrayToDataTable([
+      ['Time of Day (12 hr)', 'Accidents'],
+      ['12 AM',  3],
+      ['1 AM',  6],
+      ['2 AM',  1],
+      ['3 AM',  0],
+      ['4 AM',  0],
+      ['5 AM',  0],
+      ['6 AM',  2,],
+      ['7 AM',  0],
+      ['8 AM',  0],
+      ['9 AM',  9],
+      ['10 AM',  4],
+      ['11 AM',  0],
+      ['12 PM',  2],
+      ['1 PM',  0],
+      ['2 PM',  0],
+      ['3 PM',  2],
+      ['4 PM',  0],
+      ['5 PM',  2],
+      ['6 PM',  0],
+      ['7 PM',  2],
+      ['8 PM',  0],
+      ['9 PM',  2],
+      ['10 PM',  0],
+      ['11 PM',  2]
+      ]);
+
+      var optionsO = {
+        title: 'Number of Accident per Time of Day (12 hour)',
+        hAxis: {title: 'Time 12-hour', titleTextStyle: {color: 'blue'}}
+      };
+
+      var chartO = new google.visualization.ColumnChart(document.getElementById('chart_div16'));
+
+
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -403,7 +441,7 @@ var dataM = google.visualization.arrayToDataTable([
           chartL.draw(dataL, optionsL); // caused by Mbta
           chartM.draw(dataM, optionsM); // caused by Bus (other)
           chartN.draw(dataN, optionsN); // caused by bike
-
+          chartO.draw(dataO, options0); // Number of Accident per Time of Day (12 hour)
 
         }
       </script>
@@ -606,6 +644,7 @@ var dataM = google.visualization.arrayToDataTable([
 <p></p>
 
 <h4>Number of Accident per Time of Day (12 hour)</h4>
+<div id="chart_div16" style="width: 900px; margin:0 auto;"></div>
 <p></p>
 
 <h4>Number of Accidents per time of day</h4>
