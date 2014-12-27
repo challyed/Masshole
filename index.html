@@ -423,7 +423,28 @@ var dataM = google.visualization.arrayToDataTable([
 
       var chartO = new google.visualization.ColumnChart(document.getElementById('chart_divA'));
 
+      /* Weather*/
+      var dataP = google.visualization.arrayToDataTable([
+        ['Weather', 'Accidents'],
+        ['Snow',  658],
+        ['Rain',  4098],
+        ['Fog',  288],
+        ['Fog-Rain',  498],
+        ['Fog-Snow',  248],
+        ['Thunderstorm',  18],
+        ['Thunderstor',  14],
+        ['Rain-Thunderstorm',  366,],
+        ['Rain-Thunde',  120],
+        ['Rain-Snow',590],
+        ['Rain-Hail-Thunderstorm',20]
+        ]);
 
+        var optionsP = {
+          title: 'Weather',
+          hAxis: {title: 'Type of Weather', titleTextStyle: {color: 'blue'}}
+        };
+
+        var chartP = new google.visualization.ColumnChart(document.getElementById('chart_divB'));
 /*Functions that call data for chart*/
 
           chart.draw(data, options); // Days
@@ -442,6 +463,7 @@ var dataM = google.visualization.arrayToDataTable([
           chartM.draw(dataM, optionsM); // caused by Bus (other)
           chartN.draw(dataN, optionsN); // caused by bike
           chartO.draw(dataO, optionsO); // Number of Accident per Time of Day (12 hour)
+          chartP.draw(dataP, optionsP); // Weather
 
         }
       </script>
@@ -704,9 +726,10 @@ var dataM = google.visualization.arrayToDataTable([
 <p></p>
 
 <h4>Weather </h4>
-<p>Continue to <a href="url">http://goo.gl/v67aBh </a> for the whole set.</p>
+<p>Continue to <a href="url">http://goo.gl/v67aBh</a> for the whole set.</p>
 <div style='display: inline-block; width: 100%;'><div style='position: relative; padding-bottom: 100%; padding-top:25px; height: 0;'><iframe src='//cammassdata.silk.co/s/embed/table/collection/weathercambridge_view/column/day/column/month/column/year/column/object_1/column/object_2/column/location/column/event/order/asc/year/suggestion/filter/equals/day/slice/0/8000' style='border:0;position: absolute; top:0; left:0; width: 100%;height:100%;'></iframe></div><div style='margin-top:10px;font-size:12px;color:gray;'>Data from <a href='cammassdata.silk.co'>cammassdata.silk.co</a></div></div>
-
+<div id="chart_divB" style="width: 900px; margin:0 auto;"></div>
+<p></p>
 
 <h4>Streets on where accidents occur </h4>
 <div><iframe width="760px" title="Accident Map 2010-2013" height="646px" src="https://data.cambridgema.gov/w/4tke-xhvq/?cur=_LbIM33yW8x&from=root" frameborder="0" scrolling="no"><a href="https://data.cambridgema.gov/Public-Safety/Accident-Map-2010-2013/4tke-xhvq" title="Accident Map 2010-2013" target="_blank">Accident Map 2010-2013</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
