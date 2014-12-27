@@ -263,7 +263,7 @@ I have no idea how to approach this project like a data scientist. Im going to s
 
 # Important Commands
 
-Select TestCambridgeData.Month, TestCambridgeData.Day, TestCambridgeData.Year, TestCambridgeData.Location, WeatherData2010.Events From TestCambridgeData join WeatherData2010 Where TestCambridgeData.Month = WeatherData2010.Month and TestCambridgeData.Year = WeatherData2010.Year and TestCambridgeData.Day = WeatherData2010.Day
+Select TestCambridgeData.id, TestCambridgeData.Month, TestCambridgeData.Day, TestCambridgeData.Year, TestCambridgeData.Location, TestCambridgeData.Object_1, TestCambridgeData.Object_2, WeatherData.Events From TestCambridgeData join WeatherData Where TestCambridgeData.Month = WeatherData.Month and TestCambridgeData.Year = WeatherData.Year and TestCambridgeData.Day = WeatherData.Day
 
 select count(*) as AutoVAuto from TestCambridgeData
 where `Day of Week` = "Auto" and `Object 1` = "Van"
